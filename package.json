@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "preinstall": "typesync || :"
   },
   "dependencies": {
     "next": "10.0.3",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0"
+    "@types/react-dom": "^17.0.0",
+    "typesync": "^0.8.0"
   }
 }
