@@ -32,7 +32,6 @@
     "root": true,
     "rules": {
         "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": ["error"],
         // should be rewritten as `['error', { allowAsStatement: true }]` in ESLint 7 or later
         // SEE: https://github.com/typescript-eslint/typescript-eslint/issues/1184
         "no-void": [
@@ -40,11 +39,24 @@
             {
                 "allowAsStatement": true
             }
-        ]
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [".jsx", ".tsx"]
+            }
+        ],
+        "@typescript-eslint/no-use-before-define": ["error"]
     },
     "settings": {
         "react": {
             "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
         }
     }
 }
