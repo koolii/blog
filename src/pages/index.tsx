@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #f9a825;
+  background-color: #0277bd;
   color: #ffffff;
 `;
 const Main = styled.main`
